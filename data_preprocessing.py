@@ -2,11 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# importint dataset
+# import the dataset 
 dataset = pd.read_csv('Data.csv')
 
 # take all the columns except last one
 X = dataset.iloc[:,:-1].values
+# take the last columns
 y = dataset.iloc[:,3].values
 
 # missing data 
